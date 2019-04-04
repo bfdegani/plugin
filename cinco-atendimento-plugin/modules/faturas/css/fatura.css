@@ -1,0 +1,250 @@
+@page { 
+    margin: 1.5rem; 
+} 
+
+@media print {
+    @page { margin-top: 1.25cm; margin-bottom: 2.5cm; margin-left: 0.5cm; margin-right: 0.5cm } 
+    html { font-size:100% }
+    body { padding:0; margin:0 }
+    table { page-break-inside:auto; }
+    tr { page-break-inside:avoid; page-break-after:auto; padding: 0; margin:0 }
+    td { font-size:125%; padding: 0; margin:0; }
+    p { font-size:125% }
+}
+
+.fatura-container {
+    font-family: sans-serif;
+    width: 100%;
+    background-color: #ffffff;
+    color: #1E2447;
+    border: 1px solid #C3AD6C;
+    border-radius: 0.25rem;
+    padding: 5px;
+    margin: 2px;
+}
+
+.doc-page-break{
+    page-break-after: always;
+}   
+
+.fatura-container > hr {
+    height: 1px;
+    border-top: 1px solid #E7DEC4;
+    width:80%;
+}
+
+.fatura-container + .fatura-header {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fatura-header > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fatura-header > h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.fatura-header > p {
+    font-size: 0.75rem;
+}
+
+.fatura-footer > p {
+    font-size: 0.75rem;
+}
+
+.fatura-header > img {
+    padding: 2px;
+    margin: 2px;
+    width: 200px;
+    height: auto;
+}
+
+.fatura-container > .row {
+    width: 98%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.fatura_cliente {
+    font-size: 1rem;
+}
+
+.fatura-resumo {
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.fatura-resumo > h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.fatura-resumo > h3 {
+    font-size: 1rem;
+}
+
+.fatura-plano {
+    border: 1px solid #C3AD6C;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.fatura-plano > h2 {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fatura-plano > hr {
+    height: 1px;
+    border-top: 1px solid #E7DEC4;
+    width: 20%;
+}
+
+.fatura-detalhe {
+    color: #1E2447;
+    text-align: right;
+}
+
+.fatura-detalhe > thead .row {
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    color: #1E2447;
+    border: 1px;
+    border-top: 1px solid #C3AD6C;
+    border-bottom: 1px solid #C3AD6C;
+}
+
+.fatura-detalhe > thead td {
+    font-weight: bold;
+}
+
+.fatura-detalhe > tbody td{
+    line-height: 0.75rem; 
+    font-size: 0.75rem;
+    padding: 2px 0.5rem 2px 0.5rem;
+}
+
+.fatura-detalhe > tbody tr:nth-of-type(odd) {
+    background-color: #F6F3EE;
+}
+
+.fatura-detalhe > tbody tr:nth-of-type(even) {
+    background-color: #FFFFFF;
+}
+
+.nf-header > p {
+    font-size: 0.75rem;
+    line-height: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.nf-header > img {
+    padding: 2px;
+    margin: 2px;
+    width: 10%;
+    height: 10%;
+    align: left;
+}
+
+.nf-detalhe {
+    border: 1px solid #C3AD6C;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.nf-detalhe > h2 {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.nf-detalhe > hr {
+    height: 1px;
+    border-top: 1px solid #E7DEC4;
+    width: 20%;
+}
+
+.nf-itens {
+    color: #1E2447;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.nf-itens > thead .row {
+    text-transform: uppercase;
+    background-color: #F6F3EE;
+    color: #1E2447;
+}
+
+.nf-itens > thead td {
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-align: center;
+    line-height: 0.66rem; 
+}
+
+.nf-itens > thead .row {
+    border-top: 1px solid #C3AD6C;
+    border-bottom: 1px solid #C3AD6C;
+}
+
+.nf-itens > tbody tr:nth-of-type(odd) {
+    border-bottom: 0.5px solid #C3AD6C;
+}
+
+.nf-itens > tbody td {
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 0.7rem; 
+}
+
+.nf-itens > tbody .row {
+    background-color: #FFFFFF;
+}
+
+.nf-resumo-imposto {
+    font-size: 0.7rem;
+    line-height: 0.84rem; 
+    font-weight: bold;
+}
+
+.nf-resumo-imposto > h3{
+    text-align: left;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-bottom: 0;
+    font-weight: bold;
+}
+
+.nf-hash{
+    border: 1px solid #C3AD6C;
+    border-radius: 0.25rem;
+    text-align: center;
+    width: 100%;
+    font-size: 0.75rem;
+}
